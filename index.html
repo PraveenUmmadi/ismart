@@ -21,9 +21,33 @@ header {
   font-size: 25px;
   color: white;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #73C6B6;
+}
 
+.topnav a {
+  float: left;
+  color: #D1F2EB;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #D1F2EB;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #73C6B6;
+  color: white;
+}
 
 /* Create two columns/boxes that floats next to each other */
+
+
 nav {
   float: left;
   width: 30%;
@@ -34,8 +58,10 @@ nav {
 
 /* Style the list inside the menu */
 nav ul {
+  float: left;
   list-style-type: none;
   padding: 0;
+
 }
 
 article {
@@ -74,6 +100,15 @@ footer {
 
 <header>
   <h2>Prathyusha Loki Reddy</h2>
+
+      <div class="topnav">
+  <a class="active" href="#Tableau">Tableau</a>
+  <a href="#power">Power BI</a>
+  <a href="#Certifications">Certifications</a>
+  <a href="#Contact">Contact</a>
+</div>      
+
+  
 </header>
 
 <section>
@@ -86,13 +121,27 @@ footer {
 onclick="document.getElementById('demo').innerHTML = Date()">
 Signature Time</button>
 <p id="demo"></p>
-
-    <ul>
-      <li><a href="#">Tableau</a></li>
-      <li><a href="#">Power BI</a></li>
-      <li><a href="#">Certifications</a></li>
-    </ul>
+    
+    
+ <h3>Interests</h3>
+  <ul>
+    <li>Predictive Intelligence</li>
+    <li>Blockchain</li>
+    <li>Artificial Intelligence</li>
+    <li>Big Data</li>
+     <ul>
+  
+    <h3>Skills</h3>
+  <ul>
+    <li>Data Visualisation</li>
+    <li>Product Owner</li>
+    <li>Scrum Master</li>
+    <li>Basic Python</li>
+    <li>Tableaue/Power BI/OBIEE</li>
+  </ul>
+  
   </nav>
+  
   
   <article>
 <p>Seasoned Business Intelligence and Data Analysis professional with 7+ years of experience across
@@ -123,41 +172,9 @@ Alticore / Amway, enabling sales improvement of 7%</p>
 </html>
 
 
-
-<div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-  <br><br>
-  <h1>Resume</h1>
-  <h2>Prathyusha Loki Reddy</h2>
-  <hr />
   <br>
 
 
-  <div class="container">
-  <img src="733553-001.jpg" alt="Prathyusha Loki Reddy" width="150" height="200">
-  <div class="bottomright">Prathyusha Loki Reddy</div>
-</div>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Signature Time</button>
-<p id="demo"></p>
-
-  <p class="head">Interests</p>
-  <ul>
-    <li>Predictive Intelligence</li>
-    <li>Blockchain</li>
-    <li>Artificial Intelligence</li>
-    <li>Big Data</li>
-  </ul>
-  <p class="head">Skills</p>
-  <ul>
-    <li>Data Visualisation</li>
-    <li>Product Owner</li>
-    <li>Scrum Master</li>
-    <li>Basic Python</li>
-    <li>Tableaue/Power BI/OBIEE</li>
-  </ul>
     <p class="head">Experience</p>
   <ul>
     <a href="https://www.ups.com">
@@ -191,6 +208,4 @@ Signature Time</button>
     <li>Lazy Sleeping</li>
   </ul>
 </div>
-<div class="right"></div>
-<div id="footer">
-  <h2 id="name">Prathyusha</h2></div>
+
